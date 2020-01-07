@@ -160,7 +160,7 @@ if the build is successfull you will see the following message on your terminal.
 
 Open <i>localhost:5000</i> on your browser to view the application.
 
-### 7) Add some role types and get started.
+### 8) Add some role types and get started.
 Login as <b>Admin</b>. Click on the Admin option on the navbar. Select <b>Movie Role Types</b>, click on <b>Add</b> and add some role types to get started.
 
 You can add <b>Actor</b> as a role type for starters. Add some movies and artists with their photos, add some movie roles and explore the admin and moderator panels to see all the features of the application.
