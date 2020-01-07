@@ -42,11 +42,26 @@ The built files of the Angular code are present in the wwwroot folder.
 ## Requirements
 
 - <a href="https://dotnet.microsoft.com/download/dotnet-core/2.2">.NET Core 2.2 SDK </a>
-- <a href="https://git-scm.com/downloads">Git </a>
+- <a href="https://git-scm.com/downloads">Git (optional) </a>
+- <a href="https://dev.mysql.com/downloads/mysql/">MySQL (optional)</a>
 
 ## Steps
+### 1) Copy the project
+In your machine go to the directory where you want to download the project.
 
-### 1) Configure the Database.
+Open <b>Git bash</b> in that directory (option available on right-click in Windows 10).
+
+Run the following code
+
+<i> Requires <a href="https://git-scm.com/downloads">Git</a> to be downloaded.</i>
+
+`git clone https://github.com/ajinkyad8/MovieAppAPI.git`
+
+<b>OR</b>
+
+In the repository on Github click on <b>Clone or Download</b>, then <b>Download ZIP</b> and on downloading extract it in the directory of your choice.
+
+### 2) Configure the Database.
 You can choose to either go with MySQL or SQLite. If you are familiar with .NET and can configure the database yourself then feel free to choose the provider of your choice.
  #### SQLite
 In <b>appsettings.json</b> in the following line
@@ -84,7 +99,7 @@ Remove the previous line (no. 40) from the file.
 
 From <b>MovieAppAPI.csproj</b> remove line no. 9.
 
-### 2) Create the database.
+### 3) Create the database.
 <b>After</b> you have configured the database of your choice, run the following commands.
 
 <i>Make sure you are in the project folder while running them.</i>
@@ -94,7 +109,7 @@ dotnet ef migrations add InitialMigration
 dotnet ef database update
 ```
 
-### 3) Set up your JWT secret key.
+### 4) Set up your JWT secret key.
 In <b>appsettings.json</b> in the following line
 ```shell
 3:     "Token": "$TOKEN"
@@ -103,7 +118,7 @@ Replace `$TOKEN` with the key of your choice.
 
 You can choose a random key from <a href="https://www.grc.com/passwords.htm">here</a>.
 
-### 4) Add your cloudinary credentials.
+### 5) Add your cloudinary credentials.
 This application makes use of <a href="https://cloudinary.com/">cloudinary</a> for storing images.
 
 You can create a free account there unless you already have one.
@@ -116,7 +131,7 @@ In <b>apsettings.json</b>
 Replace `$CLOUDNAME` with your cloud name, `$APIKEY` with your Api Key and `$APISECRET` with your Api Secret. All this information will be available in your home page once you login.
 
 <i>You can run the application without cloudinary but it will throw errors everytime you attempt to upload a photo and will also hamper the complete experience of the application.</i>
-### 5) Configure Admin and Moderator Credentials.
+### 6) Configure Admin and Moderator Credentials.
 In <b>Helpers/Seed.cs</b> the following lines create an Admin and Moderator account when you run the app for the first time or with an empty database
 ```shell
 
@@ -129,7 +144,7 @@ In <b>Helpers/Seed.cs</b> the following lines create an Admin and Moderator acco
  
  <i>The password will have to be of minimum 8 characters and require at least one lowercase letter, one uppercase letter, one number and one special character.
  </i>
- ### 6) Build the application
+ ### 7) Build the application
  Run the following command to build the application.
  
  <i>Again, make sure you are in the project folder while running them.</i>
