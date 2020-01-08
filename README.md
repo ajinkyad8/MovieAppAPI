@@ -161,6 +161,7 @@ if the build is successfull you will see the following message on your terminal.
 Open <i>localhost:5000</i> on your browser to view the application.
 
 ### 8) Add some role types and get started.
+![Adding Movie Role Types](https://res.cloudinary.com/dmgnm5hrx/image/upload/v1578462459/Screenshot_2_qw7pqn.png)
 Login as <b>Admin</b>. Click on the Admin option on the navbar. Select <b>Movie Role Types</b>, click on <b>Add</b> and add some role types to get started.
 
 You can add <b>Actor</b> as a role type for starters. Add some movies and artists with their photos, add some movie roles and explore the admin and moderator panels to see all the features of the application.
@@ -175,6 +176,7 @@ You can add <b>Actor</b> as a role type for starters. Add some movies and artist
 - Movie Roles can be added from the page of the movie by clicking on <b>Edit Movie</b>.
 - <b>Photos</b> can also be added by clicking on <b>Edit Movie</b> from movie's page or <b>Edit Artist</b> from artist's page.
 - Once a user adds/edits anything, a moderator or admin needs to approve it from <b>Moderator</b> page for the other users or anonymous users to be able to see the additions/edits.
+![Moderator Review](https://res.cloudinary.com/dmgnm5hrx/image/upload/v1578463335/Screenshot_3_ipnqac.png)
 - A user can make a <b>Delete Request</b> For a movie,artist, movie role or photo from the <b>Edit Movie</b> or <b>Edit Artist</b> pages.
 - Only after a moderator or admin approves the request from the <b>Moderator</b> page is the entry deleted.
 - Users can see their contributions by clicking on <b>Your Contributions</b> below the dropdown option on the top right corner after logging in.
